@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Lighthouse Waterpark</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="c1.css">
+<style>
+body{
+	background: #eeeeee;
+	font-family: 'Varela Round', sans-serif;
+}
+.form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}	
+.navbar {		
+	background: #fff;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: 1px solid #d6d6d6;
+	box-shadow: 0 0 4px rgba(0,0,0,.1);
+}
+.nav-link {
+	margin: 0 5px;
+}
+.nav-link img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+.navbar .navbar-brand {
+	color: #555;
+	padding-left: 0;
+	font-size: 20px;
+	padding-right: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+.navbar .navbar-brand b {
+	font-weight: bold;
+	color: #eb5844;
+}
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+	color: #f08373 !important;
+}
+.navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
+	color: #eb5844 !important;
+	background: transparent !important;
+}
+.search-box {
+	position: relative;
+}	
+.search-box input.form-control {		
+	padding-right: 35px;
+	border-radius: 0;
+	padding-left: 0;
+	border-width: 0 0 1px 0;
+	box-shadow: none;
+}
+.search-box input.form-control:focus {		
+	border-color: #f08373;		
+}
+.search-box .input-group-text {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px 0 7px 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #a0a5b1;
+	font-size: 19px;
+}
+.navbar .nav-item i {
+	font-size: 18px;
+}
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.show > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+	font-size: 15px;
+}
+.navbar .navbar-form {
+	margin-right: 0;
+	margin-left: 0;
+	border: 0;
+}
+@media (min-width: 992px){
+	.form-inline .input-group {
+		width: 250px;
+		margin-right: 30px;
+	}
+}
+@media (max-width: 991px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+</style>
+</head> 
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+	<img src="logo.png">		
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<div class="navbar-nav">
+			<a href="#" class="nav-item nav-link">Home</a>
+			<div class="nav-item dropdown">
+			<a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Activities</a>
+			<div class="dropdown-menu">					
+				<a href="#" class="dropdown-item">Web Design</a>
+				<a href="#" class="dropdown-item">Web Development</a>
+				<a href="#" class="dropdown-item">Graphic Design</a>
+				<a href="#" class="dropdown-item">Digital Marketing</a>
+			</div>
+			</div>			
+			<div class="nav-item dropdown">
+				<a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Resorts</a>
+				<div class="dropdown-menu">					
+					<a href="#" class="dropdown-item">Web Design</a>
+					<a href="#" class="dropdown-item">Web Development</a>
+					<a href="#" class="dropdown-item">Graphic Design</a>
+					<a href="#" class="dropdown-item">Digital Marketing</a>
+                </div>
+            </div>
+			<a href="#" class="nav-item nav-link">Offers</a>
+			<a href="#" class="nav-item nav-link">Gallery</a>
+			<a href="#" class="nav-item nav-link">Contact</a>
+        </div>
+		<div class="navbar-nav ml-auto">
+			<div class="navbar-form-wrapper">
+				<form class="navbar-form form-inline">
+					<div class="input-group search-box">								
+						<input type="text" id="search" class="form-control" placeholder="Search Here...">
+						<div class="input-group-append">
+							<span class="input-group-text">
+								<i class="material-icons">&#xE8B6;</i>
+							</span>
+						</div>
+					</div>
+                </form>
+            
+	</div>
+</nav>
+
+<!-- Slide Bar -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+	  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img class="d-block w-100" src="img1.jpg" alt="First slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="img2.jpg" alt="Second slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="img3.jpg" alt="Third slide">
+	  </div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div><br><br>
+
+  <div class="text-center">
+	<h4>Welcome to Central India’s first Oceanic theme Water Park and Resort!</h4>
+	<p>A land full of endless magic, breath taking views, family friendly thrills, thunder parks and adventurous activities. At lighthouse , we ensure that every guest experiences the most memorable time with tons of activities along with 40 + attractions making it the most ideal destination for sharing small moments and for celebrating big wonders. Magnificently built, the park contains 4 Big Pools, 15+ Adventurous water slides , Amusement park , Agro park ,Cultural and Spiritual park , elegantly designed cottages, and a dedicated food zone catering to varied taste buds.</p>
+  </div>
+  <!-- Slider ends -->
+
+  <!-- Blog Section Start -->
+
+  <section class="bg-light py-5 py-xl-6">
+	<div class="container overflow-hidden">
+	  <div class="row gy-5">
+		<div class="col-12">
+		  <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+			<div class="col-xs-12 col-md-6">
+			  <div class="img-wrapper position-relative hcf-transform">
+				<a href="#!">
+				  <span class="badge rounded-pill text-bg-warning position-absolute top-10px start-10px"></span>
+				  <img class="img-fluid rounded w-100 hcf-of-cover hcf-op-center hcf-ih-250 hcf-ih-md-400" loading="lazy" src="img4.jpg" alt="">
+				</a>
+			  </div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+			  <div>
+				<p class="text-secondary mb-1"></p>
+				<h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">WATER PARK</a></h2>
+				<p class="mb-4">Thrill, chill and spill on high energy slides, and take over a whole new twisting, turning, and sliding experience as you dance to the rhythm of high fidelity sounds and psychedelic laser lights.</p>
+				<a class="btn btn-primary" href="#!" target="_self">Read More</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="col-12">
+		  <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+			<div class="col-xs-12 col-md-6">
+			  <div class="img-wrapper position-relative hcf-transform">
+				<a href="#!">
+				  <span class="badge rounded-pill text-bg-warning position-absolute top-10px end-10px"></span>
+				  <img class="img-fluid rounded w-100 hcf-of-cover hcf-op-center hcf-ih-250 hcf-ih-md-400" loading="lazy" src="img6.jpg" alt="">
+				</a>
+			  </div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+			  <div>
+				<p class="text-secondary mb-1"></p>
+				<h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">ADVENTURE ZONE</a></h2>
+				<p class="mb-4">Frolic into the world of thrilling adventurous activities like rope climbing, bungee Jumping, rock climbing, hanging bridge, wall climbing, valley crossing, horizontal bridge, and zip lines.
+
+				</p>
+				<a class="btn btn-primary" href="#!" target="_self">Read More</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="col-12">
+		  <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+			<div class="col-xs-12 col-md-6">
+			  <div class="img-wrapper position-relative hcf-transform">
+				<a href="#!">
+				  <span class="badge rounded-pill text-bg-warning position-absolute top-10px start-10px"></span>
+				  <img class="img-fluid rounded w-100 hcf-of-cover hcf-op-center hcf-ih-250 hcf-ih-md-400" loading="lazy" src="img7.png" alt="">
+				</a>
+			  </div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+			  <div>
+				<p class="text-secondary mb-1"></p>
+				<h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">SUVI BIRD PARK</a></h2>
+				<p class="mb-4">The newly opened Suvi BirdPark situated in the property of Lighthouse, will give you an Overlook of the Birds from Northern Countries. Bird Park has a total Species of 33 birds, of different varieties from Foreign countries.</p>
+				<a class="btn btn-primary" href="#!" target="_self">Read More</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="col-12">
+		  <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+			<div class="col-xs-12 col-md-6">
+			  <div class="img-wrapper position-relative hcf-transform">
+				<a href="#!">
+				  <span class="badge rounded-pill text-bg-warning position-absolute top-10px end-10px"></span>
+				  <img class="img-fluid rounded w-100 hcf-of-cover hcf-op-center hcf-ih-250 hcf-ih-md-400" loading="lazy" src="img8.jpg" alt="">
+				</a>
+			  </div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+			  <div>
+				<p class="text-secondary mb-1"></p>
+				<h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">RESORT</a></h2>
+				<p class="mb-4">Relax and unwind in elegantly furnished Cottages, stylishly designed Machans, rousing Tents and comfortable Deluxe Rooms equipped with state-of-the- art facilities and top-notch hospitality for an unforgettable experience in the lap of nature.</p>
+				<a class="btn btn-primary" href="#!" target="_self">Read More</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <!-- Blog Section Ends -->
+
+<!-- Testinomial Start-->
+<section style="color: #000; background-color: #f3f2f2;">
+	<div class="container py-5">
+	  <div class="row d-flex justify-content-center">
+		<div class="col-md-10 col-xl-8 text-center">
+		  <h3 class="fw-bold mb-4">Customer Reviews</h3>
+		  <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+			Lighthouse Waterpark value our customer reviews. Valuable feedback are very important for us. We will provide with best service of ours.
+		  </p>
+		</div>
+	  </div>
+  
+	  <div class="row text-center">
+		<div class="col-md-4 mb-4 mb-md-0">
+		  <div class="card">
+			<div class="card-body py-4 mt-2">
+			  <div class="d-flex justify-content-center mb-4">
+				<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+				  class="rounded-circle shadow-1-strong" width="100" height="100" />
+			  </div>
+			  <h5 class="font-weight-bold">Anamika Patil</h5>
+			  <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+			  <ul class="list-unstyled d-flex justify-content-center">
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star-half-alt fa-sm text-info"></i>
+				</li>
+			  </ul>
+			  <p class="mb-2">
+				<i class="fas fa-quote-left pe-2"></i>Best waterpark . There are lots of rides & too much fun over there, Must visit in summer time.
+			  </p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 mb-4 mb-md-0">
+		  <div class="card">
+			<div class="card-body py-4 mt-2">
+			  <div class="d-flex justify-content-center mb-4">
+				<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+				  class="rounded-circle shadow-1-strong" width="100" height="100" />
+			  </div>
+			  <h5 class="font-weight-bold">Renuka Sahare</h5>
+			  <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+			  <ul class="list-unstyled d-flex justify-content-center">
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+			  </ul>
+			  <p class="mb-2">
+				<i class="fas fa-quote-left pe-2"></i>Wave pool is clean and flooring well maintained. Music is loud and worth it with good song choices. Crowd in pool is decent. Electronic timer tells you the time remaining for next wave which is every hour.
+			  </p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 mb-0">
+		  <div class="card">
+			<div class="card-body py-4 mt-2">
+			  <div class="d-flex justify-content-center mb-4">
+				<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+				  class="rounded-circle shadow-1-strong" width="100" height="100" />
+			  </div>
+			  <h5 class="font-weight-bold">Payal Agrawal</h5>
+			  <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+			  <ul class="list-unstyled d-flex justify-content-center">
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="fas fa-star fa-sm text-info"></i>
+				</li>
+				<li>
+				  <i class="far fa-star fa-sm text-info"></i>
+				</li>
+			  </ul>
+			  <p class="mb-2">
+				<i class="fas fa-quote-left pe-2"></i>Kids slide and play area is cool with good choice of slides. Adults can join children on the slides. There are other water features to play around with too.
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+<!-- Testinomial End -->
+
+<!-- Google Map Start-->
+<section class="text-center">
+
+
+	<h3 class="mb-5">Contact us</h3>
+  
+	<div class="row">
+	  <div class="col-lg-5">
+		<iframe
+		  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.996296406894!2d79.25624617556755!3d21.390050480351192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4d14c735b6dc5%3A0xba1306d1d08a3d3e!2sLighthouse%20Waterpark%20%26%20Resort!5e0!3m2!1sen!2sin!4v1706002887230!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+		  In the focus of all you need</iframe>
+	  </div>
+  
+	  <div class="col-lg-7">
+		<form>
+		  <div class="row">
+			<div class="col-md-9">
+			  <div class="row mb-4">
+				<div class="col-md-6 mb-4 mb-md-0">
+				  <div class="form-outline">
+					<input type="text" id="form3Example1" class="form-control" />
+					<label class="form-label" for="form3Example1">First name</label>
+				  </div>
+				</div>
+				<div class="col-md-6">
+				  <div class="form-outline">
+					<input type="email" id="form3Example2" class="form-control" />
+					<label class="form-label" for="form3Example2">Email Address</label>
+				  </div>
+				</div>
+			  </div>
+			  <div class="form-outline mb-4">
+				<input type="text" id="form3Example3" class="form-control" />
+				<label class="form-label" for="form3Example3">Subject</label>
+			  </div>
+			  <div class="form-outline mb-4">
+				<textarea class="form-control" id="form4Example3" rows="4"></textarea>
+				<label class="form-label" for="form4Example3">Message</label>
+			  </div>
+			  <div class="text-center text-md-start">
+				<button type="submit" class="btn btn-primary mb-5 mb-md-0">
+				  Send
+				</button>
+			  </div>
+			</div>
+			<div class="col-md-3">
+			  <ul class="list-unstyled">
+				<li>
+				  <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+				  <p><small>Suryakiran Complex</small></p>
+				</li>
+				<li>
+				  <i class="fas fa-phone fa-2x text-primary"></i>
+				  <p><small>+6262623303</small></p>
+				</li>
+				<li>
+				  <i class="fas fa-envelope fa-2x text-primary"></i>
+				  <p><small>info@lighthousewaterpark.com</small></p>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</form>
+  
+	  </div>
+	</div>
+  
+  
+  </section>
+
+<!-- Google Map End -->
+
+  <!-- Footer Starts -->
+<div my-5>
+
+    <footer class="text-white text-center text-lg-start bg-primary">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">COVID -19 INFORMATION</h5>
+  
+          <p>
+            Health and safety of guests is our priority and to keep everyone safe, we are adhering to all the safety protocols issued by WHO to ensure a safe and enjoyable trip.
+		  </p>
+  
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+  
+          <div class="form-outline form-white mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+            <label class="form-label" for="formControlLg">Search</label>
+          </div>
+  
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Suryakiran Complex, Plot No1,
+				Bajaj Nagar, Opp.VNIT Main Gate,
+				Nagpur – 440010</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@lighthousewaterpark.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">Tel.: 6262623303 / 3304</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Tel.: 6262623303 / 3305</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+  
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		Copyright © 2024 
+      <a class="text-white" href="https://www.lighthousewaterpark.com">All Right Reserved by Light House Water Park</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+</body>
+</html>                            
